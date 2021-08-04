@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>To Do List</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./style.css'>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="intro col-12">
+                <h1>To do list</h1>
+                <div>
+                    <div class="boreder1"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="helpText col-12">
+                <p id="first">Enter text in the input field to add items to your list</p>
+                <p id="first">Click on the to mark it as a completed activity.</p>
+                <p id="first" class="second">Click the "X" to remove the item from your list.</p>
+            </div>
+        </div>
+
+        <div class="row" style="width: 100%"> 
+            <div class="dados col-6">
+                <input id="userInput" type="text" placeholder="New list..." maxlength="25">
+                <button id="enter">  <i data-feather="edit-3"></i></button> 
+            </div>
+        </div>
+
+        <!-- Empty List -->
+        <div class="row">
+            <div class="listItems col-12">
+                <ul class="col-12 offset-0 com-sm-8 offset-sm-2" id="ul"></ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        feather.replace()
+      </script>
+    <script src='./script.js'></script>
+</body>
+</html>
+
